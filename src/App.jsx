@@ -9,7 +9,7 @@ export const ImageContext = createContext();
 
 function App() {
   const { response, isLoading, error, fetchData } = useAxios(
-    `search/photos?page=1&query=office&client_id=I6dXYYNPlW4_U6UZ1fvQsgrW1oWpTEQRmM7-g4XeU5U`
+    `search/photos?page=1&query=cats&client_id=I6dXYYNPlW4_U6UZ1fvQsgrW1oWpTEQRmM7-g4XeU5U`
   );
 
   const value = {
