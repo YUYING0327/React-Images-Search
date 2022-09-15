@@ -6,6 +6,6 @@ https://unsplash.com/developers
 
 ## You can learn
 
-. Create custom hooks (useAxios)
-. Create Context and useContext
-. Tailwindcss easy way to animation (Skeleton)
+1. Create custom hooks (useAxios)
+2. Create Context and useContext
+3. Tailwindcss easy way to animation (Skeleton)
