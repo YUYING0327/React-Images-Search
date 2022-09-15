@@ -11,7 +11,7 @@ const SearchField = () => {
 
   const handleButtonSearch = () => {
     fetchData(
-      `search/photos?page=1&query=${searchValue}&client_id=I6dXYYNPlW4_U6UZ1fvQsgrW1oWpTEQRmM7-g4XeU5U`
+      `search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`
     );
     setSearchValue('');
   };
@@ -19,7 +19,7 @@ const SearchField = () => {
   const handleEnterSearch = (e) => {
     if (e.key === 'Enter') {
       fetchData(
-        `search/photos?page=1&query=${searchValue}&client_id=I6dXYYNPlW4_U6UZ1fvQsgrW1oWpTEQRmM7-g4XeU5U`
+        `search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`
       );
       setSearchValue('');
       setSearchImage(searchValue);
